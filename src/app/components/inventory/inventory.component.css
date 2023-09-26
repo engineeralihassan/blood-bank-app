@@ -1,0 +1,9 @@
+.table-container{
+    margin-top: 0.4rem;
+    padding: 1rem;
+    margin-bottom: 6rem;
+}
+.table thead th {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white or any other contrasting color */
+  }

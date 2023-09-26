@@ -1,0 +1,24 @@
+<div class="container-form">
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form #signupForm="ngForm" (ngSubmit)="onSubmit(loginForm,'signup')">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="namet" placeholder="User name" required=""  [(ngModel)]="user.name">
+					<input type="email" name="email" placeholder="Email" required="" [(ngModel)]="user.email" >
+					<input type="password" name="passward" placeholder="Password" required=""  [(ngModel)]="user.passward">
+					<button type="submit">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm,'login')">
+          <label for="chk" aria-hidden="true">Login</label>
+          <input type="email" name="email" placeholder="Email" required [(ngModel)]="loginData.name">
+          <input type="password" name="pswd" placeholder="Password" required [(ngModel)]="loginData.password">
+          <button type="submit">Login</button>
+        </form>
+			</div>
+	</div>
+</div>
